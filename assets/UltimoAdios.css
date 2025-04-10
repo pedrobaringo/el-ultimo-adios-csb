@@ -1,0 +1,677 @@
+@font-face {
+  font-family: 'Appareo';
+  src: url('../assets/appareo.ttf');
+}
+@font-face {
+  font-family: 'Glow';
+  src: url('../assets/Glow Better.otf');
+}
+.custom-system-actor-content {
+	background: url('../assets/FondoUltimoAdios2.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.charname input{
+	font-family:'Appareo';
+	font-size: 38px;
+	background: transparent;
+	border-bottom:1.5px solid black;
+	border-top:0px;
+	border-left:0px;
+	border-right:0px;
+}
+.panelbig1 {
+	font-family:'Appareo';
+}
+.marginzero {
+	margin:0px;
+}
+.textbox {
+	margin:0px;
+	font-family: 'Appareo';
+}
+.textbox2 {
+	margin:0px;
+	font-family: 'Appareo';
+	font-size: 15px;
+}
+.numatrib {
+	font-family: 'Appareo';
+	font-size: 20px;
+	height:60px;
+	width:60px;
+}
+.numatrib input[type="text"] {
+	height:60px;
+	width:60px;
+	background:url(../assets/NumberRound.webp)center;
+	background-size: 100% 100%;
+	border:0px;
+	padding-bottom:5px;
+}
+.titulosecc {
+	font-family: 'Appareo';
+	font-size: 20px;
+	color:#bd1722;
+	font-weight:700;
+	margin:0px;
+}
+.subtexto {
+	font-family: 'Appareo';
+	margin:0px;
+}
+.supertitulo {
+	font-family: 'Appareo';
+	margin:0px;
+	font-size: 12px;
+}
+.textohistoria {
+	font-family: 'Appareo';
+	font-size: 16px;
+	margin:0px;
+}
+.dedicopanel {
+	display:grid;
+	grid-template-columns: 23% 77%;
+}
+.dedicopanel2 {
+	display:grid;
+	grid-template-columns: 34% 66%;
+	margin-top: 10px;
+}
+.dedicopanel3 {
+	display:grid;
+	grid-template-columns: 33% 33% 1% 33%;
+	margin-top: 10px;
+}
+.dedicopanel4 {
+	display:grid;
+	grid-template-columns: 48% 52%;
+	margin-top: 10px;
+}
+.checkcimientos {
+	width:15px;
+	flex-grow:0;
+	margin:auto;
+}
+.checkcimientos input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../assets/CheckCimientos.webp);
+	background-size:15px;
+	flex: 0 0 15px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+	margin:0px;
+}
+.checkcimientos input[type="checkbox"]:checked {
+    background: url(../assets/CheckCimientos_Checked.webp);
+	background-size:15px;
+	-webkit-filter: none !important;
+	margin:0px;
+}
+.peniquepanel {
+	display:flex;
+}
+.peniquecheck{
+	width:40px;
+	flex-grow:0;
+	margin:0px;
+}
+.peniquecheck input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../assets/Penique_Unchecked.webp);
+	background-size:40px;
+	flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.peniquecheck input[type="checkbox"]:checked {
+    background: url(../assets/Penique_checked2.webp);
+	background-size:40px;
+	-webkit-filter: none !important;
+	margin:0px;
+}
+.checkestado{
+	width:40px;
+	flex-grow:0;
+	margin:0px;
+}
+.checkestado input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../assets/CheckSalud.webp);
+	background-size:40px;
+	flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.checkestado input[type="checkbox"]:checked {
+    background: url(../assets/CheckSalud_Checked.webp);
+	background-size:40px;
+	-webkit-filter: none !important;
+}
+.rightestado input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../assets/CheckSalud2.webp);
+	background-size:40px;
+	flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.rightestado input[type="checkbox"]:checked {
+    background: url(../assets/CheckSalud_Checked2.webp);
+	background-size:40px;
+	-webkit-filter: none !important;
+}
+.titulosaludjuicio {
+	font-family: 'Glow';
+	font-size: 25px;
+}
+.panelsaludjuicio {
+	display:grid;
+	gap:0px 5px;
+	grid-template-columns: 25% 5% 40px 10% 10% 40px 5% 25%;
+	border-bottom:1px solid black;
+}
+.noborder {
+	border:0px;
+}
+.supernum {
+	position:relative;
+	margin:0px;
+	text-align:center;
+}
+.supernum span {
+	position:absolute;
+	top:1px;
+	right:0px;
+}
+.supernumright{
+	position:relative;
+	margin:0px;
+	text-align:center;
+}
+.supernumright span {
+	position:absolute;
+	top:1px;
+	left:0px;
+}
+.marco1fila {
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 0px 0px 8px;
+}
+.marco1filaright {
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 8px 0px 0px;
+}
+.marco2filas, .marco2filasright, .marco2filasdonsombra {
+	position:relative;
+}
+.marco2filasdonsombra, .marco3filas {
+	margin:0px;
+}
+.marco2filas span,.marco2filasdonsombra span{
+	position:absolute;
+	height:200%;
+	top:-100%;
+	left:0px;
+	padding:15px;
+}
+.marco2filasright span{
+	position:absolute;
+	height:200%;
+	top:-100%;
+	right:0px;
+	padding:15px;
+}
+.marco2filasdonsombra span{
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 0px 0px 8px;
+	padding:0px 0px 0px 8px;
+}
+.marco2filas span{
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 0px 0px 8px;
+}
+.marco2filasright span{
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 8px 0px 0px;
+}
+.marco3filas span{
+	position:absolute;
+	height:300%;
+	top:-100%;
+	left:0px;
+	padding:15px;
+	padding:0px 0px 0px 8px;
+}
+.marco3filas span{
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 0px 0px 8px;
+}
+.inputtext1 input[type="text"] {
+	background:transparent;
+	border-radius:0px;
+	border-width: 0px 0px 1.5px 0px;
+	border-color:black;
+	font-family: 'Appareo';
+	margin:0px;
+	line-height:30px;
+}
+.paneldonbig {
+	display:grid;
+	grid-template-columns: 40% 20% 40%;
+}
+.paneldon1 {
+	display:grid;
+	grid-template-columns: 10% 40px 46px;
+	gap:0px 5px;
+}
+.paneldon2 {
+	display:grid;
+	grid-template-columns: 10% 40px 46px;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	gap:0px 5px;
+}
+.paneldon3 {
+	display:grid;
+	grid-template-columns: 10% 40px 46px;
+	gap:0px 5px;
+}
+.iconsombra1 {
+	height:20px;
+	width:30px;
+	background: url('../assets/Iconosombra1.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	margin:0px 0px 10px 5px;
+}
+.tipodon {
+	background: url('../assets/Tipo de Don.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	margin:10px 0px 10px 0px;
+	height:120px;
+}
+.tiposombra {
+	background: url('../assets/Tipo de Sombra.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	margin:10px 0px 10px 0px;
+	height:120px;
+}
+.tipodoninput {
+	margin-top: 10px;
+}
+.borderbottom {
+	border-bottom:1px solid black;
+}
+.dropdown1 {
+	margin:0px;
+}
+.dropdown1 select{
+	background:transparent;
+	border-radius:0px;
+	border-width: 0px 0px 1.5px 0px;
+	border-color:black;
+	font-family: 'Appareo';
+	margin:0px;
+	line-height:40px;
+}
+.panelcimientos1 {
+	gap:0px;
+	display:grid;
+	grid-template-columns: 29% 31% 15% 12.5% 12.5%;
+}
+.panelcimientos2 {
+	gap:0px;
+	display:grid;
+	grid-template-columns: 12% 48% 15% 12.5% 12.5%;
+}
+.panelcimientos3 {
+	gap:0px;
+	display:grid;
+	grid-template-columns: 18% 42% 15% 12.5% 12.5%;
+}
+.cimientostitulo span{
+	margin:auto;
+}
+.historiapanel {
+	margin:0px 0px 0px 20px;
+}
+.margintop {
+	margin-top:20px;
+}
+.borderright {
+	padding-right:2px;
+	border-right:1px solid black;
+}
+span:has(>#tipo_tirada-0) {
+	display:grid;
+	grid-template-columns: 30% 30% 40%;
+	grid-template-rows:50% 35%;
+	height:50px;
+	text-align:center;
+}
+#tipo_tirada-0 {
+	order:4;
+}
+label[for="tipo_tirada-1"] {
+	order:2;
+}
+#tipo_tirada-1 {
+	order:5
+}
+label[for="tipo_tirada-2"] {
+	order:3;
+}
+#tipo_tirada-2 {
+	order:6;
+}
+.custom-system-user-input-button[data-action="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-action="add-10"] {
+	display:none;
+}
+.ratas1 {
+	height:60px;
+	background: url('../assets/Ratas1.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	margin:0px 0px 10px 5px;
+	mix-blend-mode: darken;
+	margin:0px;
+}
+.ratas2 {
+	height:60px;
+	background: url('../assets/Ratas1.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	mix-blend-mode: darken;
+	margin:0px;
+	transform: scaleX(-1);
+}
+.pozosombra {
+	background: url('../assets/PozoSombra.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	mix-blend-mode: darken;
+	margin:0px;
+	height:100%;
+	position:relative;
+}
+.estigma {
+	background: url('../assets/Estigma.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	mix-blend-mode: darken;
+	margin:0px;
+	height:95%;
+	position:relative;
+}
+.checksombra input[type="checkbox"] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: url(../assets/CheckCimientos.webp);
+	background-size:20px;
+	flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	margin:0px;
+}
+.checksombra input[type="checkbox"]:checked {
+    background: url(../assets/CheckCimientos_Checked.webp);
+	background-size:20px;
+	-webkit-filter: none !important;
+	margin:0px;
+}
+.checksom1 {
+	position:absolute;
+	top:24.8%;
+	right:0%;
+	margin-left:3px;
+}
+.checksom2 {
+	position:absolute;
+	top:54.7%;
+	right:0%;
+	margin-left:3px;
+}
+.checksom3 {
+	position:absolute;
+	top:85.2%;
+	right:0%;
+	margin-left:3px;
+}
+.inputestigma1 {
+	position:absolute;
+	top:40%;
+	right:0%;
+	margin-left:3px;
+}
+.inputestigma2 {
+	position:absolute;
+	top:70%;
+	right:0%;
+	margin-left:3px;
+}
+.inputestigma3 {
+	position:absolute;
+	top:100%;
+	right:0%;
+	margin-left:3px;
+}
+.chat-message .message-content h1{
+font-family:'Glow';
+	font-size:30px;
+	text-align:center;
+	border:0px;
+}
+.chat-message .message-content h2{
+font-family:'Glow';
+	font-size:25px;
+	text-align:center;
+	border:0px;
+}
+.chat-message .message-content h3{
+font-family:'Appareo';
+	font-size:20px;
+	text-align:center;
+	border:0px;
+}
+.chat-message .message-content p{
+	font-family:'Appareo';
+	font-size:15px;
+	text-align:center;
+	border:0px;
+}
+.dice-roll .dice-formula {
+	display:none;
+}
+.dice-tooltip .part-header {
+	display:none;
+}
+.dice-roll .dice-total {
+	display:none;
+}
+.dice-roll .dice-tooltip {
+	display: flex;
+ 	justify-content: center;
+}
+.chat-message {
+	background: url('../assets/FondoUltimoAdios2.webp');
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.chat-message .message-header .message-sender{
+	font-family: 'Glow';
+	text-align:center;
+	font-size:30px;
+	text-wrap: wrap;
+	line-height:80%;
+	margin-top:5px;
+	margin-bottom:5px;
+	color: #671308;
+	white-space: normal;
+}
+.message .message-header .message-metadata {
+	flex:0 0 50px;
+	margin-left: 0;
+}
+.message-timestamp {
+	font-family:'Appareo';
+	text-wrap: wrap;
+	font-size:10px;
+}
+.dice-roll .dice-tooltip {
+	display:grid;
+	grid-template-columns: 100%;
+}
+.dice-tooltip .tooltip-part {
+	display:flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dice-tooltip .dice-rolls {
+	display:flex;
+	align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dice-tooltip .tooltip-part:nth-child(1) .dice-rolls .roll.d6 {
+	font-family: 'Glow';
+	background:transparent;
+	color:black;
+	font-size:35px;
+	height:35px;
+	width: 35px;
+	border:0px;
+	border-radius:5px;
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;
+	margin:5px;
+}
+.dice-tooltip .tooltip-part:nth-child(2) .dice-rolls .roll.d6 {
+	font-family: 'Glow';
+	background:black;
+	color:white;
+	font-size:35px;
+	height:35px;
+	width: 35px;
+	border:0px;
+	border-radius:5px;
+	text-align:center;
+	position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    font-weight: normal;
+	box-shadow: 2px 2px 5px black;
+	margin:5px;
+}
+.dice-tooltip .dice-rolls .roll.failure, .dice-tooltip .dice-rolls .roll.min {
+	filter: none;
+}
+.dice-tooltip .dice-rolls .roll.success, .dice-tooltip .dice-rolls .roll.max {
+	filter: none;
+}
+.window-app .window-content {
+	background:url('../assets/FondoUltimoAdios2.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+.custom-system-user-inputs{
+	background:transparent;
+	border:0px;
+}
+.custom-system-user-inputs tr{
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:0px;
+}
+.custom-system-user-inputs td:first-child label{
+	vertical-align:middle;
+	height:100%;
+	display:flex;
+	align-items: center;
+}
+.custom-system-user-input-block {
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+.custom-system-user-input-button[data-action="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-action="add-10"] {
+	display:none;
+}
+.custom-system-user-inputs tr:nth-child(even) {
+	background-color:  transparent;
+}
+.custom-system-user-inputs td button{
+	font-family: 'Appareo';
+	font-size: 20px;
+}
+.custom-system-user-inputs td input[type="number"] {
+	text-align:center;
+	transform: scale(1);
+	font-family: 'Appareo';
+	font-size: 20px;
+	height:100%;
+	max-width:40px;
+}
+.custom-system-user-inputs {
+	font-family: 'Appareo';
+	font-size: 15px;
+}
+.custom-system-user-inputs thead{
+	display: none;
+}
