@@ -53,6 +53,8 @@ Hooks.once("ready", function() {
 						let docs2 =  collection2.importAll({folderId: folderident2, folderName: "Templates Actores", keepId: true});
 						game.user.setFlag("el-ultimo-adios-csb", "welcomeMessage", true);
 						game.user.setFlag("el-ultimo-adios-csb", "lastVersion", game.modules.get("el-ultimo-adios-csb").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 100);
@@ -89,6 +91,8 @@ Hooks.once("ready", function() {
 						}
 						let docs2 =  collection2.importAll({folderId: folderident2, folderName: "Templates Actores", keepId: true});
 						game.user.setFlag("el-ultimo-adios-csb", "lastVersion", game.modules.get("el-ultimo-adios-csb").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				}
 				}, 500);
