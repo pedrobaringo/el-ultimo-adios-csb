@@ -1,17 +1,20 @@
 {
   "id": "el-ultimo-adios-csb",
   "title": "El Último Adiós (CSB)",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13.350"
   },
   "relationships": {
     "systems": [
       {
         "id": "custom-system-builder",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+		"minimum": "5.0.0",
+		"verified": "5.0.1"
+		}
       }
     ],
     "recommends": [
@@ -53,5 +56,5 @@
   ],
   "url": "https://github.com/pedrobaringo/el-ultimo-adios-csb",
   "manifest": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/download/1.0.0/el-ultimo-adios-csb.zip"
+  "download": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/download/2.0.0/el-ultimo-adios-csb.zip"
 }

@@ -6,12 +6,17 @@
   font-family: 'Glow';
   src: url('../assets/Glow Better.otf');
 }
-.custom-system-actor-content {
+.sheet .window-content {
 	background: url('../assets/FondoUltimoAdios2.webp')center;
 	background-repeat: no-repeat;
  	background-size: cover;
 }
-.charname input{
+.sheet input[type=text] {
+		box-shadow:0px 0px;
+		color: black;
+		border: 1px solid black;
+}
+.sheet .charname input{
 	font-family:'Appareo';
 	font-size: 38px;
 	background: transparent;
@@ -19,6 +24,22 @@
 	border-top:0px;
 	border-left:0px;
 	border-right:0px;
+	border-radius:0px;
+}
+.sheet {
+	color:black;
+}
+
+.sheet select{
+	color:black;
+	background:transparent;
+	border: 1px solid black;
+}
+.sheet .window-content .fas:before {
+    color:black;
+}
+.sheet .window-content .fa-dice:before {
+	color:white
 }
 .panelbig1 {
 	font-family:'Appareo';
@@ -39,7 +60,8 @@
 	font-family: 'Appareo';
 	font-size: 20px;
 	height:60px;
-	width:60px;
+	width: 100%;
+    margin: 0px;
 }
 .numatrib input[type="text"] {
 	height:60px;
@@ -55,6 +77,7 @@
 	color:#bd1722;
 	font-weight:700;
 	margin:0px;
+	max-height:fit-content;
 }
 .subtexto {
 	font-family: 'Appareo';
@@ -293,7 +316,6 @@
 	border-color:black;
 	font-family: 'Appareo';
 	margin:0px;
-	line-height:30px;
 }
 .paneldonbig {
 	display:grid;
@@ -354,7 +376,7 @@
 	border-color:black;
 	font-family: 'Appareo';
 	margin:0px;
-	line-height:40px;
+	padding: 0px;
 }
 .panelcimientos1 {
 	gap:0px;
@@ -512,12 +534,14 @@ font-family:'Glow';
 	font-size:25px;
 	text-align:center;
 	border:0px;
+	margin:5px;
 }
 .chat-message .message-content h3{
 font-family:'Appareo';
 	font-size:20px;
 	text-align:center;
 	border:0px;
+	margin:5px;
 }
 .chat-message .message-content p{
 	font-family:'Appareo';
@@ -537,6 +561,9 @@ font-family:'Appareo';
 .dice-roll .dice-tooltip {
 	display: flex;
  	justify-content: center;
+}
+.dice-roll .dice-tooltip > .wrapper {
+    overflow: visible;
 }
 .chat-message {
 	background: url('../assets/FondoUltimoAdios2.webp');
@@ -646,11 +673,33 @@ font-family:'Appareo';
 .custom-system-user-input-block {
 	display:grid;
 	grid-template-columns: auto auto auto;
+	gap:5px;
 }
-.custom-system-user-input-button[data-action="sub-10"] {
+label[for="tipo_tirada-0-"] {
+	order:1;
+}
+#tipo_tirada-0- {
+	order:4;
+	text-align: center;
+}
+label[for="tipo_tirada-1-"] {
+	order:2;
+}
+#tipo_tirada-1- {
+	order:5;
+	text-align: center;
+}
+label[for="tipo_tirada-2-"] {
+	order:3;
+}
+#tipo_tirada-2- {
+	order:6;
+	text-align: center;
+}
+.custom-system-user-input-button[data-inputaction="sub-10"] {
 	display:none;
 }
-.custom-system-user-input-button[data-action="add-10"] {
+.custom-system-user-input-button[data-inputaction="add-10"] {
 	display:none;
 }
 .custom-system-user-inputs tr:nth-child(even) {
@@ -674,4 +723,10 @@ font-family:'Appareo';
 }
 .custom-system-user-inputs thead{
 	display: none;
+}
+.checkcimientos input[type="checkbox"]::before, .peniquecheck input[type="checkbox"]::before, .checkestado input[type="checkbox"]::before, .rightestado input[type="checkbox"]::before,.checksombra input[type="checkbox"]::before  {
+    content: "";
+}
+.checkcimientos input[type="checkbox"]:checked::after, .peniquecheck input[type="checkbox"]:checked::after, .checkestado input[type="checkbox"]:checked::after, .rightestado input[type="checkbox"]:checked::after, .checksombra input[type="checkbox"]:checked::after {
+    content: "";
 }
