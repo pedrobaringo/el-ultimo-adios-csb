@@ -6,16 +6,89 @@
   font-family: 'Glow';
   src: url('../assets/Glow Better.otf');
 }
-.sheet .window-content {
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
 	background: url('../assets/FondoUltimoAdios2.webp')center;
 	background-repeat: no-repeat;
- 	background-size: cover;
+ 	background-size: 100% 100%;
+	padding:1rem;
+	color: black;
 }
-.sheet input[type=text] {
-		box-shadow:0px 0px;
-		color: black;
-		border: 1px solid black;
+.character .grid {
+	margin-top:0px;
+	margin-bottom:0px;
 }
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+    border:1px solid black;
+}
+.character input[type=number], .equippableItem input[type=number], .custom-dialog input[type=number]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+    border:1px solid black;
+}
+.character select, .equippableItem select, .custom-dialog select{
+	background:transparent;
+	color: black;
+    border:1px solid black;
+}
+.custom-system-user-inputs td button {
+    color: black;
+}
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
+    content:"\f0c8";
+    color: black;
+    font-weight:normal;
+}
+.character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
+    content: "\f14a";
+    color: black;
+}
+.character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
+    content: "\f14a\f14a";
+    color: transparent;
+}
+.custom-dialog .form-group > label {
+	color: black;
+}
+.character table, .equippableItem table, .custom-dialog table {
+	background:transparent;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:black;
+	border:1px solid black;
+}
+.character input[type="radio"]::before, .equippableItem input[type="radio"]::before, .custom-dialog input[type="radio"]::before {
+    content:"\f10c";
+    color: black;
+    font-weight:normal;
+}
+.character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
+    content: "\f192";
+    color: black;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: black;
+  border: 0px;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove black;
+    color: black
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:black;
+  background:transparent;
+  border: 2px groove black;
+}
+
 .sheet .charname input{
 	font-family:'Appareo';
 	font-size: 38px;
@@ -26,26 +99,17 @@
 	border-right:0px;
 	border-radius:0px;
 }
-.sheet {
-	color:black;
-}
-
-.sheet select{
-	color:black;
-	background:transparent;
-	border: 1px solid black;
-}
-.sheet .window-content .fas:before {
-    color:black;
-}
-.sheet .window-content .fa-dice:before {
-	color:white
-}
 .panelbig1 {
 	font-family:'Appareo';
 }
 .marginzero {
 	margin:0px;
+}
+.heighttotal >:first-child{
+	height:100%;
+}
+.titleleft {
+	justify-content:left;
 }
 .textbox {
 	margin:0px;
@@ -93,21 +157,21 @@
 	font-size: 16px;
 	margin:0px;
 }
-.dedicopanel {
+.dedicopanel  >:first-child {
 	display:grid;
 	grid-template-columns: 23% 77%;
 }
-.dedicopanel2 {
+.dedicopanel2  >:first-child {
 	display:grid;
 	grid-template-columns: 34% 66%;
 	margin-top: 10px;
 }
-.dedicopanel3 {
+.dedicopanel3  >:first-child {
 	display:grid;
 	grid-template-columns: 33% 33% 1% 33%;
 	margin-top: 10px;
 }
-.dedicopanel4 {
+.dedicopanel4  >:first-child {
 	display:grid;
 	grid-template-columns: 48% 52%;
 	margin-top: 10px;
@@ -134,7 +198,7 @@
 	-webkit-filter: none !important;
 	margin:0px;
 }
-.peniquepanel {
+.peniquepanel >:first-child {
 	display:flex;
 }
 .peniquecheck{
@@ -197,7 +261,7 @@
 	font-family: 'Glow';
 	font-size: 25px;
 }
-.panelsaludjuicio {
+.panelsaludjuicio  >:first-child {
 	display:grid;
 	gap:0px 5px;
 	grid-template-columns: 25% 5% 40px 10% 10% 40px 5% 25%;
@@ -317,23 +381,23 @@
 	font-family: 'Appareo';
 	margin:0px;
 }
-.paneldonbig {
+.paneldonbig  >:first-child {
 	display:grid;
 	grid-template-columns: 40% 20% 40%;
 }
-.paneldon1 {
+.paneldon1  >:first-child {
 	display:grid;
 	grid-template-columns: 10% 40px 46px;
 	gap:0px 5px;
 }
-.paneldon2 {
+.paneldon2  >:first-child {
 	display:grid;
 	grid-template-columns: 10% 40px 46px;
 	border-top:1px solid black;
 	border-bottom:1px solid black;
 	gap:0px 5px;
 }
-.paneldon3 {
+.paneldon3  >:first-child {
 	display:grid;
 	grid-template-columns: 10% 40px 46px;
 	gap:0px 5px;
@@ -351,14 +415,14 @@
 	background-repeat: no-repeat;
  	background-size: contain;
 	margin:10px 0px 10px 0px;
-	height:120px;
+	min-height:120px;
 }
 .tiposombra {
 	background: url('../assets/Tipo de Sombra.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
 	margin:10px 0px 10px 0px;
-	height:120px;
+	min-height:120px;
 }
 .tipodoninput {
 	margin-top: 10px;
@@ -378,17 +442,17 @@
 	margin:0px;
 	padding: 0px;
 }
-.panelcimientos1 {
+.panelcimientos1  >:first-child {
 	gap:0px;
 	display:grid;
 	grid-template-columns: 29% 31% 15% 12.5% 12.5%;
 }
-.panelcimientos2 {
+.panelcimientos2  >:first-child {
 	gap:0px;
 	display:grid;
 	grid-template-columns: 12% 48% 15% 12.5% 12.5%;
 }
-.panelcimientos3 {
+.panelcimientos3  >:first-child {
 	gap:0px;
 	display:grid;
 	grid-template-columns: 18% 42% 15% 12.5% 12.5%;
@@ -406,26 +470,26 @@
 	padding-right:2px;
 	border-right:1px solid black;
 }
-span:has(>#tipo_tirada-0) {
+span:has(>#tipo_tirada-0-) {
 	display:grid;
 	grid-template-columns: 30% 30% 40%;
 	grid-template-rows:50% 35%;
 	height:50px;
 	text-align:center;
 }
-#tipo_tirada-0 {
+#tipo_tirada-0- {
 	order:4;
 }
 label[for="tipo_tirada-1"] {
 	order:2;
 }
-#tipo_tirada-1 {
+#tipo_tirada-1- {
 	order:5
 }
 label[for="tipo_tirada-2"] {
 	order:3;
 }
-#tipo_tirada-2 {
+#tipo_tirada-2- {
 	order:6;
 }
 .custom-system-user-input-button[data-action="sub-10"] {
@@ -435,7 +499,7 @@ label[for="tipo_tirada-2"] {
 	display:none;
 }
 .ratas1 {
-	height:60px;
+	min-height:60px;
 	background: url('../assets/Ratas1.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
@@ -444,7 +508,7 @@ label[for="tipo_tirada-2"] {
 	margin:0px;
 }
 .ratas2 {
-	height:60px;
+	min-height:60px;
 	background: url('../assets/Ratas1.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
@@ -453,12 +517,15 @@ label[for="tipo_tirada-2"] {
 	transform: scaleX(-1);
 }
 .pozosombra {
+	min-height:100%;
+}
+.pozosombra  >:first-child {
 	background: url('../assets/PozoSombra.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
 	mix-blend-mode: darken;
 	margin:0px;
-	height:100%;
+	min-height:100%;
 	position:relative;
 }
 .estigma {
@@ -590,7 +657,7 @@ font-family:'Appareo';
 	text-wrap: wrap;
 	font-size:10px;
 }
-.dice-roll .dice-tooltip {
+.dice-roll .dice-tooltip  {
 	display:grid;
 	grid-template-columns: 100%;
 }
