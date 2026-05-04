@@ -797,3 +797,97 @@ label[for="tipo_tirada-2-"] {
 .checkcimientos input[type="checkbox"]:checked::after, .peniquecheck input[type="checkbox"]:checked::after, .checkestado input[type="checkbox"]:checked::after, .rightestado input[type="checkbox"]:checked::after, .checksombra input[type="checkbox"]:checked::after {
     content: "";
 }
+.textboxdiary .prosemirror{
+  min-height:220px;
+}
+.tabbedpanel a {
+  font-family: 'Glow';
+    font-size: 20px;
+}
+.header-fields {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.custom-system-customHeader {
+  grid-column: 1 / span 2;
+}
+.panelcuervo1 {
+  background: url('../assets/Cuervofarola2.webp');
+  background-repeat:no-repeat;
+  background-size: 60px 60px;
+}
+.panelcuervo2 {
+  background: url('../assets/Cuervofarola.webp') right top;
+  background-repeat:no-repeat;
+  background-size: 60px 60px;
+}
+.paneltext1 {
+  border:1.5px solid black;
+  margin:1px 0px 10px 19px;
+  padding:0px 0px 0px 10px;
+}
+.paneltext2 {
+  border:1.5px solid black;
+  margin:1px 19px 10px 0px;
+  padding:0px 0px 0px 10px;
+}
+.paneltext3 {
+  border:1.5px solid black;
+  padding:0px 0px 0px 10px;
+}
+.tipodoninput {
+  border-radius: 0px;
+  border-style:solid;
+    border-width: 0px 0px 1.5px 0px;
+    border-color: black;
+    font-family: 'Appareo';
+}
+.textbox h2 {
+  color:black;
+  font-family: 'Appareo';
+}
+.textbox strong {
+  font-weight:900;
+}
+.secondroll .dice-tooltip .tooltip-part .dice-rolls .roll.d6 {
+    font-family: 'Glow';
+    background: black;
+    color: white;
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    line-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    font-weight: normal;
+    box-shadow: 2px 2px 5px black;
+    margin: 5px;
+}
+.sombrabutton {
+  margin:auto;
+  font-family:'Glow';
+  font-size: 20px;
+  text-transform: uppercase;
+  border:2px solid black;
+}
+.dialogsombra label{
+  font-family: 'Appareo';
+  font-size:15px;
+  margin-bottom:10px;
+}
+.dialogsombra label{
+  font-family: 'Appareo';
+  font-size:17px;
+  margin-bottom:10px;
+}
+.dialogsombra input[type="number"] {
+  font-family: 'Appareo';
+  font-size:30px;
+  height:32px;
+  padding-bottom:4px;
+  margin-bottom:10px;
+}
