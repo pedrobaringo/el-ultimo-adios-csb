@@ -136,12 +136,12 @@
 	padding-bottom:5px;
 }
 .titulosecc {
-	font-family: 'Appareo';
-	font-size: 20px;
-	color:#bd1722;
-	font-weight:700;
-	margin:0px;
-	max-height:fit-content;
+    font-family: 'Appareo';
+    font-size: 15px;
+    color: #5e217a;
+    font-weight: 700;
+    margin: 0px;
+    max-height: fit-content;
 }
 .subtexto {
 	font-family: 'Appareo';
@@ -151,6 +151,7 @@
 	font-family: 'Appareo';
 	margin:0px;
 	font-size: 12px;
+ font-style: italic;
 }
 .textohistoria {
 	font-family: 'Appareo';
@@ -381,8 +382,8 @@
 	font-family: 'Appareo';
 	margin:0px;
 }
-.paneldonbig  >:first-child {
-	display:grid;
+.paneldonbig >:first-child {
+display:grid;
 	grid-template-columns: 40% 20% 40%;
 }
 .paneldon1  >:first-child {
@@ -410,19 +411,33 @@
  	background-size: contain;
 	margin:0px 0px 10px 5px;
 }
+.panelinteriordon {
+position:relative;
+min-height:50px;
+}
 .tipodon {
 	background: url('../assets/Tipo de Don.webp')center;
 	background-repeat: no-repeat;
- 	background-size: contain;
-	margin:10px 0px 10px 0px;
-	min-height:120px;
+    background-size: contain;
+    margin: 10px 0px 10px 0px;
+    min-height: 100px;
+    position:absolute;
+    left:50%;
+    top:-40px;
+}
+.panelsombra1 {
+position:relative;
 }
 .tiposombra {
-	background: url('../assets/Tipo de Sombra.webp')center;
+	background: url('../assets/NiveldeSombra.webp')center;
 	background-repeat: no-repeat;
  	background-size: contain;
-	margin:10px 0px 10px 0px;
-	min-height:120px;
+	margin:0px;
+	min-height:100px;
+    min-width:160px;
+    position:absolute;
+    left:-20px;
+    top:-5px;
 }
 .tipodoninput {
 	margin-top: 10px;
@@ -445,17 +460,17 @@
 .panelcimientos1  >:first-child {
 	gap:0px;
 	display:grid;
-	grid-template-columns: 29% 31% 15% 12.5% 12.5%;
+	grid-template-columns: 29% 53% 6% 6% 6%;
 }
 .panelcimientos2  >:first-child {
 	gap:0px;
 	display:grid;
-	grid-template-columns: 12% 48% 15% 12.5% 12.5%;
+	grid-template-columns: 12% 70% 6% 6% 6%;
 }
 .panelcimientos3  >:first-child {
 	gap:0px;
 	display:grid;
-	grid-template-columns: 18% 42% 15% 12.5% 12.5%;
+	grid-template-columns: 18% 64% 6% 6% 6%;
 }
 .cimientostitulo span{
 	margin:auto;
@@ -517,7 +532,7 @@ label[for="tipo_tirada-2"] {
 	transform: scaleX(-1);
 }
 .pozosombra {
-	min-height:100%;
+	min-height:350px;
 }
 .pozosombra  >:first-child {
 	background: url('../assets/PozoSombra.webp')center;
@@ -804,10 +819,6 @@ label[for="tipo_tirada-2-"] {
   font-family: 'Glow';
     font-size: 20px;
 }
-.header-fields {
-  display: grid;
-  grid-template-columns: 70% 30%;
-}
 .custom-system-customHeader {
   grid-column: 1 / span 2;
 }
@@ -890,4 +901,100 @@ label[for="tipo_tirada-2-"] {
   height:32px;
   padding-bottom:4px;
   margin-bottom:10px;
+}
+.custom-system-rollable, .custom-system-rollable > * {
+color:#5e217a;
+}
+body {
+--color-shadow-primary: #5e217a;
+}
+.cimientossubtext >:first-child{
+font-size:10px;
+font-style: italic;
+font-family: 'Appareo';
+display:grid;
+gap:0px;
+grid-template-columns: 29% 4% 14% 4% 8%;
+}
+.cimientossubtext{
+margin-left:120px;
+}
+.cimientossubtext >:first-child div{
+margin:0px;
+}
+.emptypanel {
+min-height:90px;
+}
+.marginleft {
+margin-left:10px;
+}
+.marco2filasextra, .marco2filasrightextra {
+position:relative;
+}
+.marco2filasrightextra span{
+	position:absolute;
+	height:200%;
+	top:-100%;
+	right:0px;
+}
+.marco2filasrightextra span{
+	border-width: 10px;
+	background-clip: padding-box;
+	border-style: solid;
+	border-image: url(../assets/Marcos.webp);
+	border-image-slice: 99;
+	border-image-repeat: stretch;
+	border-width: 0px 8px 0px 0px;
+}
+.marco2filasextra span {
+    border-width: 10px;
+    background-clip: padding-box;
+    border-style: solid;
+    border-image: url("../assets/Marcos.webp");
+    border-image-slice: 99;
+    border-image-repeat: stretch;
+    border-width: 0px 0px 0px 8px;
+}
+.marco2filasextra span {
+    position: absolute;
+    height: 200%;
+    top: -100%;
+    left: 0px;
+}
+.panelsalud1 >:first-child{
+display:grid;
+gap:0px;
+grid-template-columns: 60% 10% 40px 20%;
+}
+.paneljuicio1 >:first-child{
+display:grid;
+gap:0px;
+grid-template-columns: 20% 40px 10% 60%;
+}
+.paneldonllave >:first-child {
+display:grid;
+	grid-template-columns: 25% 75%;
+    gap:0px;
+}
+.llaveimagen {
+background: url('../assets/Llave.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: contain;
+	margin:10px 0px 10px 0px;
+	min-height:200px;
+}
+.smallsubtext {
+font-size: 12px;
+font-family: 'Appareo';
+font-style: italic;
+}
+.paneldonbigextra >:first-child {
+display:grid;
+	grid-template-columns: 70% 30%;
+}
+.definiciontext {
+margin-left:20px;
+}
+.marginrightextra {
+padding-right:10px;
 }
