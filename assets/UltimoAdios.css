@@ -436,7 +436,7 @@ position:relative;
 	min-height:100px;
     min-width:160px;
     position:absolute;
-    left:-20px;
+    left:0px;
     top:-5px;
 }
 .tipodoninput {
