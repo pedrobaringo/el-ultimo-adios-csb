@@ -2,3 +2,5 @@
  El Último Adiós-CSB
  
 Usar el Manifest: https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/latest/download/module.json
+
+Tutorial en video: https://youtu.be/Qs6hNqjl93Q
