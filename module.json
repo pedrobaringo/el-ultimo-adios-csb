@@ -1,7 +1,7 @@
 {
   "id": "el-ultimo-adios-csb",
   "title": "El Último Adiós (CSB)",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
@@ -87,9 +87,21 @@
   "esmodules": [
     "modules/welcomemessage.js"
   ],
+  "media": [
+    {
+      "type": "cover",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "setup",
+      "url": "modules/el-ultimo-adios-csb/assets/Imagenes y Mapas/Background4_Bis.webp",
+      "thumbnail": "modules/el-ultimo-adios-csb/assets/Imagenes y Mapas/Background4_Bis.webp"
+    }
+  ],
   "url": "https://github.com/pedrobaringo/el-ultimo-adios-csb",
   "manifest": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/latest/download/module.json",
-  "download": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/download/2.1.5/el-ultimo-adios-csb.zip",
+  "download": "https://github.com/pedrobaringo/el-ultimo-adios-csb/releases/download/2.1.6/el-ultimo-adios-csb.zip",
   "description": "",
   "flags": {}
 }

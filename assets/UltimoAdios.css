@@ -6,6 +6,14 @@
   font-family: 'Glow';
   src: url('../assets/Glow Better.otf');
 }
+@font-face {
+  font-family: 'Cassannet Bold';
+  src: url('../assets/Cassannet Plus Bold-ed16.otf');
+}
+@font-face {
+  font-family: 'Cassannet Black';
+  src: url('../assets/Cassannet Plus Black-3cf7.otf');
+}
 .character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
 	background: url('../assets/FondoUltimoAdios2.webp')center;
 	background-repeat: no-repeat;
@@ -90,7 +98,9 @@
 }
 
 .sheet .charname input{
-	font-family:'Appareo';
+	font-family:'Cassannet Bold';
+ text-transform: uppercase;
+ color: #5e217a;
 	font-size: 38px;
 	background: transparent;
 	border-bottom:1.5px solid black;
