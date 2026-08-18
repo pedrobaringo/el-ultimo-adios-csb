@@ -10,16 +10,19 @@ Después necesitarás instalar el módulo de El Último Adiós. Por ahora la ún
 
 Ahora ya puedes crear un mundo con el sistema Custom System Builder. Activa el módulo del Último Adiós y te saldrá este mensaje en el chat:
 <img width="301" height="360" alt="image" src="https://github.com/user-attachments/assets/f98a94a5-2332-4f81-89a7-f6bc7734a012" />
- Haz click en el botón Importa los compendios. Se actualizará la página cuando acabe la importación.
+
+Haz click en el botón Importa los compendios. Se actualizará la página cuando acabe la importación.
 
 # Fichas de personaje
 Crea un nuevo actor (no abras las fichas en la carpeta Templates actores).
 <img width="610" height="615" alt="image" src="https://github.com/user-attachments/assets/181ff6ab-3925-4429-a25b-200505fbcf54" />
+
 1. Elige que tipo de ficha quieres crear (Personaje jugador o Personaje no jugador).
 2. Haz click en el icono de refrescar, seguramente tengas que hacer click dos veces para que se acomode al tamaño correcto.
 
 ## Personaje jugador
 <img width="1201" height="840" alt="image" src="https://github.com/user-attachments/assets/9f4e4ec2-f3e8-4475-a2a0-32806fc58d43" />
+
 1. Selecciona que tipo de PJ vas a llevar (custordio o mensajero) y te apareceran las opciones de este tipo de personaje.
 
 Ya puedes rellenar todos los campos de la ficha.
@@ -43,6 +46,7 @@ Si el personaje es un Custodio la tirada no tendrá dados de sombra ni botón:
 # Pregenerados, Escenas y Banda sonora
 El módulo incluye 3 compendios a parte del de las Templates que puedes importar desde el menú de Compendios (1) :
 <img width="352" height="568" alt="image" src="https://github.com/user-attachments/assets/7dce9db0-667f-4128-9228-5c6476bc0e89" />
+
 2. Escenas: En este compendio hay dos escenas, una que puedes usar como portada y otra que contiene el mapa de Londres.
 3. Listas de Reproducción: En este compendio encontrarás una lista de reproducción con la banda sonora original del juego.
 4. Personajes Pregenerados: En este compendio se encuentran 4 personajes pregenerados que puedes usar en tus aventuras.
